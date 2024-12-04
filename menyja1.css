@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:red;
+  color: black;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Header Styles */
+header {
+  background: #8d0e0e;
+  color: goldenrod;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Home Section */
+.sectionOne {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.bg-video {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h1 {
+  position: relative;
+  padding: 20px;
+}
+
+/* Menu Section */
+.menu {
+  background: black;
+  padding: 50px 0;
+}
+
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-category h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.itemsUl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.itemsUl div {
+  background: #f9f9f9;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.itemsUl img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Button Styles */
+.category-button {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.category-button:hover {
+  background: rebeccapurple;
+}
+
+/* Contact Section */
+.contactUs {
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contact-item {
+  margin: 0 20px;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+/* Responsive Styles */
+message.txt
+3 KB

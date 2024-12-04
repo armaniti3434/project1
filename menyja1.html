@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="menyja1.css" />
+   
+  </head>
+  <body>
+    <!-- scroll top button -->
+    <button id="scrollToTopButton" class="scroll-to-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Menu overlay -->
+    <div id="menuOverlay"></div>
+
+    <!-- header -->
+
+    <header>
+
+      <img src="" width="50%">
+
+
+
+
+      <div class="container">
+        <nav id="navbar">
+          <div class="logo">
+            <i class="fa-solid fa-a" style="color: #fff"></i>
+            <a href="index.html">URORA</a>
+          </div>
+          <div id="rightSide">
+            <ul id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contactUs">Contact</a></li>
+              <li><a href="about.html">About us</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menuToggle"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- home section -->
+
+    <section>
+      <div class="sectionOne">
+        <video autoplay muted loop class="bg-video">
+          <source src="assets/Restaur.mp4" type="video/mp4" />
+        </video>
+        <h1>shijojeni ushqimin</h1>
+<img src="" width="50%">
+
+
+
+
+      </div>
+    </section>
+
+    <!-- menu section -->
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2>menyja jone</h2>
+        <div class="menu-items">
+          <button class="category-button" data-category="appetizers">
+            <h3>mengjesi</h3>
+            <i class="fas fa-bowl-food"></i>
+          </button>
+          <button class="category-button" data-category="mainCourse">
+            <h3>pjata kryesore</h3>
+            <i class="fa-solid fa-utensils"></i>
+          </button>
+          <button class="category-button" data-category="dessert">
+            <h3>Desertet</h3>
+            <i class="fa-solid fa-cheese"></i>
+          </button>
+          <button class="category-button" data-category="beverage">
+            <h3>pijet</h3>
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+          </button>
+
+          <!-- Search button -->
+
+          <div class="search-container">
+            <input type="text" id="menuSearch" placeholder="Search...">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          
+        </div>
+
+        <!-- Categories -->
+
+        <div class="menu-category active" data-category="appetizers">
+          <h3></h3>
+
+          <ul class="itemsUl">
+            <div class="appItem" data-ingredients="chicken, seasoning">
+              <li>Chicken Wings - <span>4.99euro</span></li>
+              <p>shum i shishem dhe crispy.</p>
+              <img src="https://tastesbetterfromscratch.com/wp-content/uploads/2014/09/Baked-Chicken-Wings-3-500x500.jpg" />
+            </div>
+
+
+
+
+            <div class="appItem" data-ingredients="supe">
+              <li>supe - <span>1.99euro</span></li>
+              <p>shum i shishem d.</p>
+              <img src="https://i.ytimg.com/vi/FkoNW23Ikws/maxresdefault.jpg" />
+            </div>
+
+
+
+            <div class="appItem" data-ingredients="omlet">
+              <li>omlet - <span>1.99euro</span></li>
+              <p>shum e shishem .</p>
+              <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_860,ar_3:2/v1/img/recipes/52/64/99/0SjpEWURRzKZt1avUq9h_omlet.jpg" />
+            </div>
+
+
+
+            <div class="appItem" data-ingredients="">
+              <li>vez ne sy- <span>1.99euro</span></li>
+              <p>shum e shishem .</p>
+              <img src="https://agroweb.org/wp-content/uploads/2018/02/vezetre12.jpg" />
+            </div>
+
+            <div class="appItem" data-ingredients="omlet">
+              <li>sup me perime - <span>1.99euro</span></li>
+              <p>shum e shishem .</p>
+              <img src="https://agroweb.org/wp-content/uploads/2017/10/supe001.jpg" />
+            </div>
+
+            <div class="appItem" data-ingredients="omlet">
+              <li>omlet me proshut - <span>1.99euro</span></li>
+              <p>shum e shishem .</p>
+              <img src="https://www.mesazhi.com/wp-content/uploads/2021/11/auto_auto_omlet-vo-frantsii16368747721637938032.jpg" />
+            </div>
+
+
+            <div
+              class="appItem"
+              data-ingredients="lettuce, tomatoes, feta cheese"
+            >
+              <li>Greek Salad - <span>6.99euro</span></li>
+              <p>nje sallad e mbushur me marull domate tranguj dhe disa fete djathi.</p>
+              <img src="https://hips.hearstapps.com/hmg-prod/images/greek-salad-index-642f292397bbf.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*" />
+            </div>
+            <div class="appItem" data-ingredients="onions, batter">
+              <li>Onion Rings - <span>4.99euro</span></li>
+              <p>te shishme dhe crispy.</p>
+              <img src="https://kristineskitchenblog.com/wp-content/uploads/2022/03/crispy-air-fryer-onion-rings-recipe-0775.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="mainCourse">
+          <h3>pjata kryesore</h3>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Classic Burger - <span>2.99euro</span></li>
+              <p>buk e but e mbushur me pleskavic sallad dhe pomfrit .</p>
+              <img src="https://assets.wsimgs.com/wsimgs/rk/images/dp/recipe/202351/0003/img10l.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="pizza">
+              <li>pizza - <span>6.99euro</span></li>
+              <p>
+                pizza me proshut, suxhuk , margarita , tuna.
+              </p>
+              <img src="https://www.simplyrecipes.com/thmb/pjYMLcsKHkr8D8tYixmaFNxppPw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2019__09__easy-pepperoni-pizza-lead-3-8f256746d649404baa36a44d271329bc.jpg" />
+            </div>
+
+
+            <div class="mainItem" data-ingredients="file pule">
+              <li>file pule - <span>6.99euro</span></li>
+              <p>mish i bsrdh pomfrit sos kerpudhash</p>
+              <img src="https://i.ytimg.com/vi/-aM8ZtjxjYo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC89ItDxOy1yhd_neiPRrZGNeHr2w" />
+            </div>
+
+
+
+            <div class="mainItem" data-ingredients="biftek">
+              <li>biftek - <span>11.99euro</span></li>
+              <img src="https://i.nefisyemektarifleri.com/2023/02/07/biftek-nasil-pisirilir-puf-noktali-12-nefis-tarif-7.jpg" />
+            </div>
+
+
+
+
+
+
+            <div class="mainItem" data-ingredients="ramstek">
+              <li>ramstek - <span>10.99euro</span></li>
+              <img src="https://crvenajabukamarindvor.ba/wp-content/uploads/2023/07/Body-tekst-3.jpg" />
+            </div>
+
+
+
+
+
+            <div class="mainItem" data-ingredients="sallat pule">
+              <li>sallat pule - <span>3.99euro</span></li>
+              <img src="https://i.ytimg.com/vi/7kCX5BcU56c/sddefault.jpg" />
+            </div>
+
+
+
+
+
+            <div class="mainItem" data-ingredients="kombinim">
+              <li>kombinim skare - <span>6.99euro</span></li>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkzWfF5PETQ4KQAeHisbeyi6Eo_8hgvnxsaA&s" />
+            </div>
+
+
+
+
+
+
+
+            <div class="mainItem" data-ingredients="samuna">
+              <li>samuna  - <span>1.99euro</span></li>
+              <img src="https://i.ytimg.com/vi/NG75kQt43hY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAuPXfNgyRlLflu-ZpxMpvDbDCe9g" />
+            </div>
+
+
+
+
+            <div class="mainItem" data-ingredients="pleskavic e mbushur">
+              <li>pleskavic e mbushur - <span>6.99euro</span></li>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf-eu27zyDU7Jp7K-gNajaBhagILk_a46Qpg&s" />
+            </div>
+
+
+
+
+
+
+
+
+            <div class="mainItem" data-ingredients="Salmon, Tomato Sauce">
+              <li>Salmon - <span>10.99euro</span></li>
+              <p>
+               salmon i marinuatr dhe i pjekur ne skare.
+              </p>
+              <img src="https://static01.nyt.com/images/2024/02/13/multimedia/LH-pan-seared-salmon-lwzt/LH-pan-seared-salmon-lwzt-verticalTwoByThree735.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="dessert">
+          <h3>Desserts</h3>
+          <ul class="itemsUl">
+               <!-- Itemat e deserteve kÃ«tu -->
+            <div class="dessItem" data-ingredients="Waffle, Fruits">
+              <li>Fruit Waffle - <span>2.99euro</span></li>
+              <p>nje fruit wafle e mbushur me qokollad dhe fruta mali.</p>
+              <img src="https://img.freepik.com/premium-photo/wafle-with-fruits-composition-delicious-homemade-breakfest-snack-generative-ai_116317-26811.jpg" />
+            </div>
+
+
+            <div class="dessItem" data-ingredients="ekler">
+<li>ekler - <span>0.99euro</span></li>
+              <p></p>
+              <img src="https://cdn.yemek.com/mnresize/1250/833/uploads/2021/11/ekler-one-cikan-yeni1.jpg" />
+            </div>
+
+
+
+            <div class="dessItem" data-ingredients="cheesecake">
+              <li>cheesecake - <span>2.99euro</span></li>
+                            <p>.</p>
+                            <img src="https://i.ytimg.com/vi/nI7uvDSLd4w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCz7Vklx2B1ke-HqF7BL0dp7CZ0HQ" />
+                          </div>
+
+
+
+
+   
+
+
+
+
+            <div class="dessItem" data-ingredients="Dough, Chocolate">
+              <li>Doughnuts - <span>1.99euro</span></li>
+              <p>
+                doughnuts me shije te ndryshme.
+              </p>
+              <img src="https://cdn.britannica.com/38/230838-050-D0173E79/doughnuts-donuts.jpg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Flour, Candies">
+              <li>trileqe - <span>1.99euro</span></li>
+              <p>e ster mbushur me krem karramel.</p>
+              <img src="https://tiffinandteaofficial.com/wp-content/uploads/2020/10/IMG_0871-1-scaled-e1636884399835.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="beverage">
+          <h3>pije</h3>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Green Vegetables, Milk">
+              <li>makiato  - <span>0.99euro</span></li>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPzDcXi8sCQOzgi_YIx3gQVzXs_qGmApbuYw&s" />
+            </div>
+            <div class="bevItem" data-ingredients="Mint, Sprite, Ice">
+              <li>expreso - <span>0.99euro</span></li>
+              <img src="https://proofed.co.uk/wp-content/uploads/2019/10/coffee-3107235_640.jpg" />
+            </div>
+            <div class="bevItem" data-ingredients="Milk, Vanilla">
+              <li>coca cola - <span>0.99euro</span></li>
+              <img src="https://m.media-amazon.com/images/I/61qtDO0X9GL.jpg" />
+            </div>
+
+            <div class="bevItem" data-ingredients="sprite">
+              <li>Sprite - <span>1.99euro</span></li>
+              <img src="https://126956000.cdn6.editmysite.com/uploads/1/2/6/9/126956000/s848309795171683491_p221_i1_w1500.jpeg" />
+            </div>
+
+
+
+            <div class="bevItem" data-ingredients="fanta ">
+              <li>fanta - <span>1.99euro</span></li>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZkJogpvTMUqkTcpdRmixXor8QuZoGalWcHA&s" />
+            </div>
+
+
+
+
+
+
+
+
+
+          </ul>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Contact Start -->
+
+    <section>
+      <div class="contactUs" id="contactUs">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Booking</h3>
+              <p>
+                <i class="fa fa-envelope-open"></i>
+              </p>
+            </div>
+            <div class="contact-item">
+              <h3>General</h3>
+              <p>
+                <i class="fa fa-envelope-open"></i>
+              </p>
+            </div>
+            <div class="contact-item">
+              <h3>Technical</h3>
+              <p>
+                <i class="fa fa-envelope-open"></i>
+              </p>
+            </div>
+          </div>
+          <div class="contactWrapper">
+            <div class="mapLeftSide">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.670762592577!2d31.49789431532078!3d30.015066425289443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840a29c1157db%3A0xdce7571900a19982!2sFifth%20Settlement%2C%20New%20Cairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1620156604565!5m2!1sen!2seg"
+                frameborder="0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+
+            <div class="formRightSide">
+              <form id="contactForm">
+                <div class="form-flex">
+                  <div class="nameAndEmailWrapper">
+                    <div class="form-item">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder=" "
+                        />
+                        <label for="name">emri yt</label>
+                      </div>
+                    </div>
+                    <div class="form-item">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder=" "
+                        />
+                        <label for="email">emaili yt</label>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <img src="https://www.desmoinesregister.com/gcdn/authoring/authoring-images/2023/09/14/PDEM/70849524007-either-or-dining-area.jpg" alt="Contact Us Background" style="width: 50%; height: auto;" />
+
+
+
+
+
+                  <div class="form-item">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder=" "
+                      />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder=" "
+                        id="message"
+                        style="height: 145px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <button id="contactBtn" class="contactBtn" type="submit">
+                      dergo mesazh
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact End -->
+
+    <!-- Popup -->
+
+    <div class="popupOverlay" id="popup">
+      <div class="popup-content">
+        <h2>
+          Ingredients
+          <span class="close" id="close">&times;</span>
+        </h2>
+        <ul id="ingredients-list"></ul>
+      </div>
+    </div>
+
+    <!-- footer  -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo footer-logo">
+            <i class="fa-solid fa-a" style="color: #fff"></i>
+            <a href="index.html">URORA</a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contactUs">Contact</a></li>
+              <li><a href="about.html">About us</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <p>Contact Us:</p>
+            <p></p>
+            <p>Phone: 045677890</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a
+            href="https://www.linkedin.com/in/maha-fathy-40801b1b5/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/mahamfathy" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <p>mir se vini</p>/* General Styles */
+        
+          
+        </div>
+      </div>
+    </footer>
+
+   
+    <script src="menyja1.js"></script>   
+
+    <script>
+      // Event listener pÃ«r butonat e kategorive
+      document.querySelectorAll('.category-button').forEach(button => {
+          button.addEventListener('click', () => {
+              const category = button.getAttribute('data-category');
+              const categorySection = document.querySelector(`.menu-category[data-category="${category}"]`);
+              
+              if (categorySection) {
+                  categorySection.scrollIntoView({ behavior: 'smooth' });
+              }
+          });
+      });
+  
+      // Scroll to Top Button Functionality
+      const scrollToTopButton = document.getElementById('scrollToTopButton');
+  
+      window.addEventListener('scroll', () => {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              scrollToTopButton.style.display = "block";
+          } else {
+              scrollToTopButton.style.display = "none";
+          }
+      });
+  
+      scrollToTopButton.addEventListener('click', () => {
+          document.body.scrollTop = 0; // PÃ«r Safari
+          document.documentElement.scrollTop = 0; // PÃ«r Chrome, Firefox, IE, dhe Opera
+      });
+  </script>
+  
+
+
+
+  </body>
+</html>
+message.txt
+20 KB
